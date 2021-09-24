@@ -56,7 +56,8 @@ void matrix_dfs(Matrix& grid)
         if (visitados.find(current) != visitados.end()) {
             continue;
         }
-        cout << "current: " << current.first << ", " << current.second <<" valor: " << grid[current.first][current.second]<<endl;
+        cout << "current: " << current.first << ", " << current.second;
+        cout << " valor: " << grid[current.first][current.second] << endl;
         cout << " vecinos: ";
         for (auto v : vecinos(current, grid))
         {
@@ -81,7 +82,8 @@ void matrix_bfs(Matrix& grid)
         if (visitados.find(current) != visitados.end()) {
             continue;
         }
-        cout << "current: " << current.first << ", " << current.second << " valor: " << grid[current.first][current.second] << endl;
+        cout << "current: " << current.first << ", " << current.second;
+        cout << " valor: " << grid[current.first][current.second] << endl;
         cout << " vecinos: ";
         for (auto v : vecinos(current, grid))
         {
